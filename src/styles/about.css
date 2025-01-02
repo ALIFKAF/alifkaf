@@ -1,0 +1,33 @@
+/* About section styles */
+.about {
+    padding: 8rem 4rem;
+    background: #000;
+    color: #fff;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.about-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 4px;
+}
+
+.signature {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-top: 2rem;
+    opacity: 0.8;
+}

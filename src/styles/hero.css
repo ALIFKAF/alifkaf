@@ -1,0 +1,59 @@
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.95),
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0.95)
+    );
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.hero:hover {
+    transform: translateY(-5px);
+}
+
+.shop-now {
+    padding: 1.2rem 3.5rem;
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, #000, #222, #000);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shop-now::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.shop-now:hover::before {
+    left: 100%;
+}

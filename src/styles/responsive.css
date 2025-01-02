@@ -1,0 +1,61 @@
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        padding: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .brand-name {
+        text-align: center;
+    }
+
+    .brand-name::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .brand-name h1 {
+        font-size: 2.5rem;
+        letter-spacing: 8px;
+    }
+
+    .hero {
+        margin: 2rem 1rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .social-icons {
+        gap: 1.5rem;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    .brand-name h1 {
+        font-size: 2rem;
+        letter-spacing: 6px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .shop-now {
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+    }
+}
